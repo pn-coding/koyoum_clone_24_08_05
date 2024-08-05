@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position2</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent_box{
+            width: 400px;
+            height: 500px;
+            background-color: lightgray;
+            margin: 0 auto;
+            position: relative;
+            /* =>자식에게 절대값을 넣게 되면 자식은 브라우저 좌측 상단으로 이동함
+            =>자식의 기준점을 부모 기준으로 변경할땐 부모에게 position을 적용함
+            =>단, 부모의 상태에 따라 상대값 또는 절대값을 적용할것  */
+        }
+
+        .child_box{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* margin: 0 auto; */
+            /* =>절대값 적용시 마진의 auto값은 적용안됨 */
+            margin-left: -50px;
+            margin-top: -50px;
+
+            /* *포지션(절대값) 사용시 가운데 정렬 공식(left 기준)
+            1.left: 50%
+            2.margin-left: -가로 절반px; */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="parent_box">
+        <div class="child_box"></div>
+    </div>
+
+</body>
+</html>

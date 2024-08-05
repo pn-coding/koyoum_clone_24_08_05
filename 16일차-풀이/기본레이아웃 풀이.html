@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃 풀이</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            color: #1d1d1d;
+        }
+
+        a{
+            text-decoration: none;
+            color: #1d1d1d;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+        /* reset end */
+
+        section{
+            /* padding-left: 250px;
+            padding-right: 250px; */
+            padding: 75px 250px;
+        }
+        /* common css end(공통 css) */
+
+        header{
+            height: 80px;
+            background-color: #E6E6E6;
+            padding: 20px 250px;
+        }
+
+        .logo{
+            font-size: 26px;
+            font-weight: 900;
+            float: left;
+        }
+
+        .menu_wrap{
+            float: right;
+        }
+
+        .menu_wrap li{
+            font-size: 18px;
+            margin-left: 55px;
+            float: left;
+            margin-top: 5px;
+        }
+        /* header end */
+
+        .section_1{
+            height: 900px;
+            background-color: #BEBEBE;
+            padding-top: 267px;
+        }
+
+        .section_1 h3{
+            font-size: 80px;
+            font-weight: 900;
+        }
+
+        .section_1 p{
+            font-size: 18px;
+            margin-bottom: 39px;
+            opacity: 0.65;
+        }
+
+        .more{
+            width: 186px;
+            height: 55px;
+            border: 1px solid #707070;
+            border-radius: 17px;
+            text-align: center;
+            line-height: 55px;
+            font-size: 18px;
+        }
+
+        .more a{
+            display: block;
+            width: 100%;
+            height: 55px;
+        }
+
+        /* section_1 end */
+
+        .section_2{
+            overflow: hidden;
+            /* =>자식이 float값으로 부모의 높이가 상실했을때
+            부모에게 overflow를 적용시 부모의 높이가 다시 생성됨 */
+        }
+
+        .section_2 h3,
+        .section_4 h3{
+            font-size: 60px;
+            font-weight: 900;
+            margin-bottom: 30px;
+        }
+
+        .con_wrap{
+            width: 1403px;
+        }
+
+        .con{
+            width: 434.33333px;
+            float: left;
+            margin-right: 50px;
+        }
+
+        .con:last-child{
+            margin-right: 0;
+        }
+
+        .con_img_2, 
+        .con_img_4{
+            height: 504px;
+            background-color: #BEBEBE;
+        }
+
+        .con_2 h4{
+            font-size: 20px;
+            margin-top: 11px;
+        }
+        /* section_2 end */
+
+        .section_3{
+            height: 700px;
+            background-color: #BEBEBE;
+        }
+        /* section_3 end */
+
+        .con_4:nth-child(2){
+            margin-top: 150px;
+        }
+
+        .con_4:nth-child(3){
+            margin-top: 300px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <header>
+
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+
+            <ul class="menu_wrap">
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+
+        </header>
+
+        <section class="section_1">
+            <h3>This is title</h3>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing <br> 
+                and typesetting industry. Lorem Ipsum has be
+            </p>
+            <div class="more">
+                <a href="#">MORE</a>
+            </div>
+        </section>
+
+        <section class="section_2">
+
+            <h3>This is title</h3>
+
+            <div class="con_wrap con_wrap_2">
+
+                <div class="con con_2">
+                    <a href="#">
+                        <div class="con_img_2"></div>
+                        <h4>Contents Title</h4>
+                    </a>
+                </div>
+
+                <div class="con con_2">
+                    <a href="#">
+                        <div class="con_img_2"></div>
+                        <h4>Contents Title</h4>
+                    </a>
+                </div>
+
+                <div class="con con_2">
+                    <a href="#">
+                        <div class="con_img_2"></div>
+                        <h4>Contents Title</h4>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section_3">
+            <h3>Section 3 title</h3>
+        </section>
+
+        <section class="section_4">
+
+            <h3>This is title</h3>
+
+            <div class="con_wrap con_wrap_4">
+
+                <div class="con con_4">
+                    <a href="#">
+                        <div class="con_img_4"></div>
+                    </a>
+                </div>
+
+                <div class="con con_4">
+                    <a href="#">
+                        <div class="con_img_4"></div>
+                    </a>
+                </div>
+
+                <div class="con con_4">
+                    <a href="#">
+                        <div class="con_img_4"></div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

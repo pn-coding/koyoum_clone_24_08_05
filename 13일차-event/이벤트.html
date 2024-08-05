@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: steelblue;
+        }
+
+        /* *hover
+        =>엘리먼트에 마우스를 올리면 엘리먼트의 스타일을 변형 할 수 있음 
+        =>css의 거의 모든 속성 사용 가능 */
+
+        .box:hover{
+            background-color: teal;
+            /* width: 500px; */
+            border-radius: 50%;
+        }
+
+        .parent_box{
+            width: 400px;
+            height: 200px;
+            background-color: lightgray;
+        }
+
+        .child_box{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+        }
+
+
+        .parent_box:hover .child_box{
+            background-color: aquamarine;
+        }
+        /* =>hover를 사용시 자식, 자손 선택자를 이용할수 있음 */
+
+    </style>
+</head>
+<body>
+
+    <!-- *이벤트 
+    =>키보드 또는 마우스로 특정 행동을 했을때
+    그에 대응하는 결과를 나타내는 과정  -->
+
+    <div class="box"></div>
+
+    <div class="parent_box">
+        <div class="child_box"></div>
+    </div>
+    
+</body>
+</html>

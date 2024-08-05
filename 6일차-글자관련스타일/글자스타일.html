@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자스타일</title>
+    <style>
+
+        .text{
+            width: 300px;
+            height: 300px;
+            border-width: 3px;
+            border-color: black;
+            border-style: solid;
+            font-size: 30px;
+            /* =>글자 크기 조절 */
+
+            /* font-family: '궁서체'; */
+            /* =>글자체 변경 */
+
+            /* color: rgb(0, 255, 0); */
+            /* =>글자 색상 변경 
+            =>rgb 표현 */
+
+            color: #0000ff;
+            /* =>16진수 표현, 반드시 앞에 # 기호가 붙어야됨 */
+
+            color: rgba(255, 0, 0, 0.5);
+            /* =>a는 투명도 값 조절 
+            =>0~1단위만 사용 가능 */
+
+            font-weight: 100;
+            /* =>100   ~   500     ~   900
+            (얇게)      (중간)       (두꺼움) */
+
+            text-align: center;
+            /* =>글자 좌우 정렬 */
+
+            line-height: 300px;
+            /* =>글자 상하 조절 
+            =>본래 속성은 행간 조절 
+            =>높이값을 지정할것 */
+
+            /* text-decoration: underline; */
+            /* =>글자 밑줄 */
+
+            text-decoration: line-through;
+            /* =>글자 취소선 */
+
+            font-style: italic;
+            /* =>글자 기울기 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="text">텍스트</div>
+
+</body>
+</html>
+
+<!-- *RGB
+=>빛을 통해 표현 
+=>모니터, 핸드폰, tv 등
+=> 0 ~ 255 단계로 표현
+=>0으로 갈수록 검은색
+=>255로 갈수록 흰색
+
+*16진수 
+=>00 ~ ff단계로 표현
+=>00으로 갈수록 검은색
+=>ff으로 갈수록 흰색
+=>앞에 반드시 #을 붙여줘야됨 -->

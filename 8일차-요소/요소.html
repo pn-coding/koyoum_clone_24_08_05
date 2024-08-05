@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element</title>
+    <style>
+
+        /* *요소 
+        1.블럭 요소(block)
+        =>지정한 크기값에 맞춰 적용됨 
+        =>알수 없는 여백값 없음 
+        =>기본적으로 가로 여백값이 가득 차 있음 (눈에 안보이는 여백)
+        =>div, p, h1~h6, ul, li
+
+        2.인라인 요소(inline)
+        =>크기를 지정해도 적용 안됨 
+        =>알수 없는 여백이 있음 
+        =>img태그는 크기값이 적용되지만, 인라인 요소임 
+        =>a, b, i, strong, strike, u .... 
+        */
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            font-size: 30px;
+            border: 2px solid red;
+            display: inline;
+        }
+
+        a{
+            width: 200px;
+            height: 200px;
+            background-color: lightpink;
+            font-size: 30px;
+            border: 2px solid mediumturquoise;
+            display: block;
+            /* =>a태그에 블럭요소를 지정하면 
+            크기를 적용한 만큼 링크 범위가 늘어남  */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>블럭요소</div>
+    <div>블럭요소</div>
+    
+    <a href="#">인라인 요소</a>
+    <a href="#">인라인 요소</a>
+
+    
+</body>
+</html>

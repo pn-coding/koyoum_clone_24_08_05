@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여백</title>
+    <style>
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            background-color: coral;
+        }
+
+        .box_1{
+            /* margin: 100px;
+            =>마진에 값을 하나만 지정하면 
+            상하좌우 같은 간격으로 여백이 생김 */
+
+            /* margin-top: 150px;
+            margin-right: 0;
+            margin-bottom: 50px;
+            margin-left: 300px; */
+
+            /* *margin 축약
+            margin: 위 오른쪽 아래 왼쪽; */
+            /* margin: 150px 0 50px 300px; */
+
+            /* *margin 2개 값으로 축약 
+            margin: 위아래 양옆
+            =>위아래 값과 양옆의 값이 동일할때 사용 가능 */
+            /* margin: 50px 100px; */
+
+            margin: 0 auto;
+            /* =>엘리먼트 좌우 가운데 정렬 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- *여백 
+    1.margin
+    =>엘리먼트 기준 상하좌우에 원하는 값을 지정하여 
+    간격을 둘 수 있음
+
+    2.padding
+    =>엘리먼트 기준 안쪽 또는 바깥쪽으로 확장 및
+    축소 시킴 -->
+
+    <div class="box box_1"></div>
+    <div class="box"></div>
+
+</body>
+</html>

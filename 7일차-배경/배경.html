@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+
+    <style>
+
+        .box_el{
+            width: 1000px;
+            height: 600px;
+            /* *border 축약
+            border: 두께 종류 컬러; */
+            border: 3px solid black;
+
+            background-color: lightyellow;
+            /* =>배경색 지정 */
+
+            background-image: url(https://www.stagbeetles.com/data/file/photo_etc/578124504_8hTcVNGD_KakaoTalk_20141003_231105510.jpg);
+            /* =>엘리먼트 크기 안으로 이미지가 들어감
+            =>이미지는 무조건 반복함
+            =>이미지 사이즈에 따라 잘릴수도 있음  */
+
+            background-repeat: no-repeat;
+            /* =>이미지를 반복하지 않음 */
+
+            /* background-size: 100px 400px; */
+            /* =>이미지 크기 조절 
+            =>px 단위로 조절 가능 하며, 하나의 값만 지정하면
+            x축 기준으로 조절, 띄어쓰기를 이용하면 x,y축 둘다 지정 가능 */
+            background-size: 30%;
+            /* =>엘리먼트 기준으로 퍼센트 조절 가능 */
+
+            /* background-size: cover; */
+            /* =>이미지 비율에 맞춰 가득 채우지만, 잘리는 부분이 생길수 있음 */
+            /* background-size: contain; */
+            /* =>이미지 비율에 맞춰 가득 채우지만 빈공간이 남을수 있음 */
+
+            background-position: bottom;
+            /* =>배경이미지의 위치를 조절할 수 있음 
+            =>top, left, right, bottom, center 적용 가능 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box_el"></div>
+
+</body>
+</html>
+

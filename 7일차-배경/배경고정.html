@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background fix</title>
+    <style>
+
+        body{
+            height: 3000px;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: lightsalmon;
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .bg{
+            width: 100%;
+            height: 500px;
+            border: 10px solid black;
+            background-image: url(https://www.stagbeetles.com/data/file/photo_etc/578124504_8hTcVNGD_KakaoTalk_20141003_231105510.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* =>배경 이미지를 고정시킴 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">엘리먼트</div>
+    <div class="bg"></div>
+
+</body>
+</html>
