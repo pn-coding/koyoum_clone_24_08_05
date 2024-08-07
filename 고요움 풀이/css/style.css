@@ -209,3 +209,120 @@ header{
 .title_wrap_3{
     float: right;
 }
+
+.title_wrap_3 h5{
+    margin-top: 50px;
+    font-family: '명조체';
+    font-size: 28px;
+    font-weight: 100;
+    color: #3F280D;
+}
+
+.line_3{
+    width: 40px;
+    height: 1px;
+    background-color: #3F280D;
+    margin-top: 20px;
+}
+
+.title_wrap_3 h3{
+    font-size: 34px;
+    font-weight: 900;
+    margin: 50px 0 20px 0;
+}
+
+.title_wrap_3 h4{
+    color: #00B44E;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.title_wrap_3 p{
+    font-size: 18px;
+    color: white;
+    margin: 110px 0 50px 0;
+}
+
+.button_3{
+    width: 80px;
+    height: 80px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+
+.button_3 a{
+    display: block;
+    line-height: 80px;
+    font-size: 20px;
+    width: 100px;
+    /* background-color: lightgray; */
+    margin-left: 38px;
+    color: white;
+}
+
+.button_3 span{
+    opacity: 0.5;
+}
+/* section_3 end */
+
+
+.section_4{
+    height: 850px;
+    background-image: url(http://koyoum.co.kr/public/img/main/section3_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.title_wrap_4{
+    width: 640px;
+    position: absolute;
+    bottom: 180px;
+    right: 180px;
+}
+
+.title_wrap_4 h3{
+    width: 150px;
+    float: left;
+}
+
+.title_wrap_4 p{
+    font-size: 22px;
+    color: white;
+    margin-top: 40px;
+    float: left;
+}
+
+.leaf{
+    width: 120px;
+    float: left;
+}
+
+.title_wrap_4 span{
+    font-weight: 900;
+    color: #FFF9C5;
+}
+
+/* section_4 end */
+
+
+.section_5{
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background: url(http://koyoum.co.kr/public/img/main/section4_bg.jpg) no-repeat center / cover;
+    /* =>배경축약
+    background: color url() 반복 위치 / 크기 */
+    overflow: hidden;
+}
+
+.con_5{
+    width: 47.5%;
+    float: left;
+    height: 450px;
+    background-color: lightblue;
+}
+
+.con_5:nth-child(2){
+    float: right;
+}
